@@ -1,0 +1,21 @@
+import React, { useState } from 'react'
+
+const EventOnce = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const [result, setResult] = useState('-');
+  const handleClick = e => {
+    if(!clicked) {
+      setResult(Math.floor(Math.random() * 100 + 1));
+      setClicked(true)
+    }
+  }
+  return (
+    <>
+    <button onClick={handleClick}>結果表示</button>
+    <p>今日の運勢は{result}です</p>
+    </>
+  )
+}
+
+export default EventOnce
