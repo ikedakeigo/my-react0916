@@ -11,12 +11,16 @@ import FormList from "./FormList";
 import FormRadio from "./FormRadio";
 import FormCheck from "./FormCheck";
 import FormCheckMult from "./FormCheckMult";
+import FormFile from "./FormFile";
+import StateNest from "./StateNest";
+import StateNest2 from "./StateNest2";
+import StateTodo from "./StateTodo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <FormCheckMult />
+  <StateTodo />
   </>
 );
 
