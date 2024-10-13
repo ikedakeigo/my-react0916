@@ -9,13 +9,17 @@ import HookRefNg from "./chapter7/HookRefNg";
 import HookRef from "./chapter7/HookRef";
 import HookRefForword from "./chapter7/HookRefForword";
 import HookCallbackRef from "./chapter7/HookCallbackRef";
+import { RouterProvider } from "react-router-dom";
+import routeBasic from "./chapter8/routeBasic";
+import routesLink from "./chapter8/routesLink";
+import routeParam from "./chapter8/routeParam";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <HookCallbackRef />
+    <RouterProvider router={routeParam} />
   </>
 );
 
