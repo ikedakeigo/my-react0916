@@ -8,10 +8,11 @@ const BookPage = () => {
   // または
   // params['名前']
 
-  const params = useParams();
+  // const {isbn} = useParams();
+  const { isbn = '978-4-8156-0182-9'} = useParams();
   return (
     <p>
-      ISBNコード「{params.isbn}」のページです。
+      ISBNコード「{isbn}」のページです。
     </p>
   )
 }

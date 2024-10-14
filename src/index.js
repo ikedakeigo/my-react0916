@@ -13,14 +13,17 @@ import { RouterProvider } from "react-router-dom";
 import routeBasic from "./chapter8/routeBasic";
 import routesLink from "./chapter8/routesLink";
 import routeParam from "./chapter8/routeParam";
+import routesHandle from "./chapter8/routesHandle";
+import { HelmetProvider } from "react-helmet-async";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <>
-    <RouterProvider router={routeParam} />
-  </>
+  <HelmetProvider>
+    <RouterProvider router={routesHandle} />
+  </HelmetProvider>
+  // ここまでp446
 );
 
 // If you want to start measuring performance in your app, pass a function
