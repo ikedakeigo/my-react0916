@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import MyHeader from './MyHeader';
 
 const BookPage = () => {
   //ルートパラメータを取得
@@ -11,9 +12,12 @@ const BookPage = () => {
   // const {isbn} = useParams();
   const { isbn = '978-4-8156-0182-9'} = useParams();
   return (
+    <>
+    <MyHeader />
     <p>
       ISBNコード「{isbn}」のページです。
     </p>
+    </>
   )
 }
 

@@ -18,7 +18,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+// react-helmetを有効
 root.render(
   <HelmetProvider>
     <RouterProvider router={routesHandle} />
